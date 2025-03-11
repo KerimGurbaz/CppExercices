@@ -3,4 +3,5 @@ project(CppExercices)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CppExercices main.cpp)
+add_executable(CppExercices main.cpp
+        date.h)

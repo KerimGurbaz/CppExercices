@@ -2,6 +2,12 @@
 #include <string>
 using namespace std;
 
+#include "date.h"
+
+void afficher_date(const Date &d) {
+    cout<<d.day<<"."<<d.mounth<<"."<<d.year;
+}
+
 struct Person {
     string firstName;
     string lastName;
@@ -37,6 +43,10 @@ public:
 };
 
 int main() {
+
+    Date uneDate = {29, 10, 1987};
+    cout<<"Une date     :" ;
+    afficher_date(uneDate);
 
     MyStruct s;
     s.data =5; // direct access because it's public
