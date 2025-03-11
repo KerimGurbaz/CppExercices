@@ -1,13 +1,23 @@
 #include <iostream>
 #include <string>
+
+#include "../../../../Program Files/JetBrains/CLion 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/stdarg.h"
 using namespace std;
 
 #include "date.h"
+#include "personne.h"
+
+
 
 void afficher_date(const Date &d) {
     cout<<d.day<<"."<<d.mounth<<"."<<d.year;
 }
-
+void afficher_personne(const Personne &p) {
+    cout<<"Nom  :"<<p.nom<<"\n";
+    cout<<"Adresse  :" <<p.adresse<<"\n";
+    cout<<"Anniversaire : ";
+    afficher_date(p.anniversaire);
+}
 struct Person {
     string firstName;
     string lastName;
